@@ -36,4 +36,11 @@ class ExperiencesControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal "Updated name", data["start_date"]
   end
+
+  test "destroy" do
+    assert_difference "Experience.count", -1 do
+      delete "/experiences/#{Experience.first.id}.json"
+      assert_response 200
+    end
+  end
 end
