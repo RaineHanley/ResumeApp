@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Skill.create!(skill_name: "Ruby")
-Skill.create!(skill_name: "JavaScript")
-Skill.create!(skill_name: "Rails")
-Skill.create!(skill_name: "React")
+Skill.create!(name: "Ruby")
+Skill.create!(name: "JavaScript")
+Skill.create!(name: "Rails")
+Skill.create!(name: "React")

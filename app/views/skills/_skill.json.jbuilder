@@ -1,1 +1,1 @@
-json.skill_name skill.skill_name
+json.name skill.name
