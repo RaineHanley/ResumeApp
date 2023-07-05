@@ -4,6 +4,11 @@ class ExperiencesController < ApplicationController
     render :index
   end
 
+  def show
+    @experience = Experience.find_by(id: params[:id])
+    render :show
+  end
+
   def create
     @experience = Experience.create(
       start_date: params[:start_date],

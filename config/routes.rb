@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/experiences" => "experiences#index"
+  get "/experiences/:id" => "experiences#show"
   post "/experiences" => "experiences#create"
 end
