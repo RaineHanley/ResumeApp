@@ -27,4 +27,5 @@ Rails.application.routes.draw do
   delete "/students/:id" => "students#destroy"
 
   get "/educations" => "educations#index"
+  post "/educations" => "educations#create"
 end
