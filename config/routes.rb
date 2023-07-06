@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
 
   post "/sessions" => "sessions#create"
+  
+  get "/skills" => "skills#index"
+  post "/skills" => "skills#create"
+  get "/skills/:id" => "skills#show"
+  patch "/skills/:id" => "skills#update"
+  delete "/skills/:id" => "skills#destroy"
 end
