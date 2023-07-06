@@ -14,4 +14,9 @@ class EducationsController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @education = Education.find_by(id: params[:id])
+    render :show
+  end
 end
