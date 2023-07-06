@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   get "/skills" => "skills#index"
   post "/skills" => "skills#create"
   get "/skills/:id" => "skills#show"
-  patch "skills/:id" => "skills#update"
+  patch "/skills/:id" => "skills#update"
   delete "/skills/:id" => "skills#destroy"
 end
