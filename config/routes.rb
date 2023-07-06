@@ -25,7 +25,6 @@ Rails.application.routes.draw do
   post "/students" => "students#create"
   patch "/students/:id" => "students#update"
   delete "/students/:id" => "students#destroy"
-end
 
-Education.create(start_date: "08/12/15", end_date: "05/27/19", degree: "Bachelor's of Science", university_name: "San Francisco State University", details: "Here are the details")
-Education.create(start_date: "08/12/15", end_date: "05/27/19", degree: "Bachelor's of Arts", university_name: "San Jose State University", details: "Here are the details")
+  get "/educations" => "educations#index"
+end
