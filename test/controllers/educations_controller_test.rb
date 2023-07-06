@@ -31,4 +31,11 @@ class EducationsControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal "Updated degree", data["degree"]
   end
+
+  test "destroy" do
+    assert_difference "Education.count", -1 do
+      delete "/educations/#{Education.first.id}.json"
+      assert_response 200
+    end
+  end
 end
