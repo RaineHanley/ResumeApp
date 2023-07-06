@@ -16,3 +16,7 @@ Skill.create!(name: "Ruby")
 Skill.create!(name: "JavaScript")
 Skill.create!(name: "Rails")
 Skill.create!(name: "React")
+
+Capstone.create!(name: "Resume App", description: "Resume App: features, accomplishments, learning while making project", url: "urltest.com", screenshot: "picture1.jpeg")
+
+Capstone.create!(name: "Recipe App", description: "Recipe App: food, food, and more food...", url: "urlfood.com", screenshot: "picture2.jpeg")
