@@ -26,8 +26,21 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_05_172051) do
     t.string "online_resume_url"
     t.string "github_url"
     t.string "photo"
+  end
+
+  create_table "experiences", force: :cascade do |t|
+    t.string "start_date"
+    t.string "end_date"
+    t.string "job_title"
+    t.string "company_name"
+    t.text "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "skills", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 end
