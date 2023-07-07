@@ -17,6 +17,7 @@ class StudentsController < ApplicationController
       online_resume_url: params[:online_resume_url],
       github_url: params[:github_url],
       photo: params[:photo],
+
     )
     render :show
   end
