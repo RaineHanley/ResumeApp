@@ -10,3 +10,6 @@ json.personal_website_url student.personal_website_url
 json.online_resume_url student.online_resume_url
 json.github_url student.github_url
 json.photo student.photo
+json.experiences student.experiences
+json.educations student.educations
+json.capstones student.capstones
