@@ -26,6 +26,10 @@ Skill.create!(name: "Rails", student_id: student1.id)
 Skill.create!(name: "React", student_id: student1.id)
 
 
-Capstone.create!(name: "Resume App", description: "Resume App: features, accomplishments, learning while making project", url: "urltest.com", screenshot: "picture1.jpeg")
+Capstone.create!(name: "Resume App", description: "Resume App: features, accomplishments, learning while making project", url: "urltest.com", screenshot: "picture1.jpeg", student_id: student1.id)
 
-Capstone.create!(name: "Recipe App", description: "Recipe App: food, food, and more food...", url: "urlfood.com", screenshot: "picture2.jpeg")
+Capstone.create!(name: "Recipe App", description: "Recipe App: food, food, and more food...", url: "urlfood.com", screenshot: "picture2.jpeg", student_id: student2.id)
+
+Education.create!(start_date: "1/1/2000", end_date: "12/31/2000", degree: "Certificate", university_name: "Indiana University", details: "Important Details", student_id: student1.id)
+
+Education.create!(start_date: "1/1/2010", end_date: "12/31/2010", degree: "Bachelors", university_name: "Purdue University", details: "Semi-important Details", student_id: student2.id)
