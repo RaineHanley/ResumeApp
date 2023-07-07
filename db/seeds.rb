@@ -20,10 +20,11 @@ Experience.create!(start_date: "1/1/2022", end_date: "12/31/2022", job_title: "T
 
 Experience.create!(start_date: "1/1/2023", end_date: "Current", job_title: "Test Title C", company_name: "Test Company C", details: "Currently doing x, y, z.", student_id: student2.id)
 
-Skill.create!(name: "Ruby")
-Skill.create!(name: "JavaScript")
-Skill.create!(name: "Rails")
-Skill.create!(name: "React")
+Skill.create!(name: "Ruby", student_id: student1.id)
+Skill.create!(name: "JavaScript", student_id: student1.id)
+Skill.create!(name: "Rails", student_id: student1.id)
+Skill.create!(name: "React", student_id: student1.id)
+
 
 Capstone.create!(name: "Resume App", description: "Resume App: features, accomplishments, learning while making project", url: "urltest.com", screenshot: "picture1.jpeg")
 
